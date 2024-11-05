@@ -1,5 +1,5 @@
+import UserMenu from "@/app/layout/user-menu";
 import { Button } from "@/components/ui/button";
-import { CiUser } from "react-icons/ci";
 
 interface NavbarProps {
   isLogin: boolean;
@@ -13,7 +13,7 @@ const Navbar = ({ isLogin }: NavbarProps) => {
       </div>
 
       <div className="nav-links">
-        {isLogin ? <CiUser /> : <Button>login</Button>}
+        {isLogin ? < UserMenu/> : <Button>login</Button>}
       </div>
     </div>
   );
